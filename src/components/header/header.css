@@ -1,0 +1,43 @@
+header {
+  display: flex;
+}
+
+.logo {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content .menu ul {
+  display: flex;
+  list-style: none;
+}
+
+.content .menu ul li {
+  color: grey;
+  padding: 5px 20px 5px 0;
+}
+
+.content .login ul {
+  display: flex;
+  list-style: none;
+  margin-right: 30px;
+}
+
+.content .login ul li {
+  color: grey;
+  padding: 5px 25px 5px 0;
+}
+
+#border {
+  padding: 5px 15px;
+  border: solid 2px grey;
+  border-radius: 10px;
+}
