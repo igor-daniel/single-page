@@ -1,6 +1,14 @@
 import React from "react";
 import './header.css'
+import showClass from './showClass.js'
+import openBox from './openBox.js'
 import Logo from '../img/logo.svg'
+import CetaBaixo from '../img/icon-arrow-down.svg'
+import todoList from '../img/icon-todo.svg'
+import Calendar from '../img/icon-calendar.svg'
+import alarm from '../img/icon-reminders.svg'
+import planning from '../img/icon-planning.svg'
+import { element } from "prop-types";
 
 export const Header = () => {
   return (
@@ -12,8 +20,9 @@ export const Header = () => {
       <div className="content">
         <nav className="menu">
           <ul>
-            <li>Features</li>
-            <li>Company</li>
+            <li onClick={showClass}>Features <img src={CetaBaixo} alt="" />
+            </li>
+            <li onClick={openBox}>Company <img src={CetaBaixo} alt="" /></li>
             <li>Careers</li>
             <li>About</li>
           </ul>
@@ -25,7 +34,22 @@ export const Header = () => {
           </ul>
         </div>
       </div>
-    </header>
+      <div id="box-list">
+        <ul>
+          <li><img src={todoList} /> Todo list</li>
+          <li><img src={Calendar} /> Calendar</li>
+          <li><img src={alarm} /> Reminders</li>
+          <li><img src={planning} /> Planning</li>
+        </ul>
+      </div>
+      <div className="box-near">
+        <ul>
+          <li>History</li>
+          <li>Our Time</li>
+          <li>Blog</li>
+        </ul>
+      </div>
+    </header >
 
   );
 }
