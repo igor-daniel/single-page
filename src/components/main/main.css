@@ -53,3 +53,9 @@ main {
 .image img {
   max-width: 100%;
 }
+
+@media(max-width: 375px) {
+  main {
+    flex-direction: column-reverse;
+  }
+}

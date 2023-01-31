@@ -1,6 +1,7 @@
 import React from "react";
 import './main.css'
 import ImgDesktop from '../img/image-hero-desktop.png'
+import ImgMobile from '../img/image-hero-mobile.png'
 import data from '../img/client-databiz.svg'
 import audio from '../img/client-audiophile.svg'
 import meet from '../img/client-meet.svg'
@@ -24,7 +25,11 @@ export const Main = () => {
         </div>
       </div>
       <div className="image">
-        <img src={ImgDesktop} alt="" />
+        <picture>
+          <source media="(max-width: 400px)" srcSet={ImgMobile} />
+          <img src={ImgDesktop} alt="" />
+        </picture>
+
       </div>
     </main>
   );
