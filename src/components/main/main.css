@@ -6,8 +6,8 @@
 
 main {
   display: flex;
+  justify-content: space-around;
   width: 1250px;
-  background-color: red;
   margin: auto;
 }
 
@@ -16,10 +16,38 @@ main {
   flex-direction: column;
 }
 
+.content-main h1 {
+  font-size: 60px;
+  line-height: 0.9;
+  margin-top: 25px;
+}
+
+.content-main p {
+  color: grey;
+  font-size: 20px;
+  padding: 50px 0;
+}
+
+.content-main button {
+  color: #FFF;
+  font-size: 18px;
+  background-color: #000;
+  border: none;
+  border-radius: 10px;
+  width: 120px;
+  padding: 12px 0;
+}
+
+.block-images {
+  margin-top: 60px;
+}
+
+.block-images img {
+  padding: 13px;
+}
+
 .image {
-  width: 100px;
-  height: 200px;
-  background-color: red;
+  width: 380px;
 }
 
 .image img {

@@ -10,9 +10,9 @@ export const Main = () => {
   return (
     <main>
       <div className="content-main">
-        <h1>Make remote work </h1>
-        <p>Get your team in sync, no matter your location.
-          Streamline processes, create team rituals, and
+        <h1>Make <br /> remote  work </h1>
+        <p>Get your team in sync, no matter your location. <br />
+          Streamline processes, create team rituals, and <br />
           watch productivity soar.</p>
         <button>Lear more</button>
 
