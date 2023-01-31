@@ -7,7 +7,6 @@
 main {
   display: flex;
   justify-content: space-around;
-  width: 1250px;
   margin: auto;
 }
 
@@ -22,10 +21,13 @@ main {
   margin-top: 25px;
 }
 
+.content-main .p {
+  padding: 50px 0;
+}
+
 .content-main p {
   color: grey;
   font-size: 20px;
-  padding: 50px 0;
 }
 
 .content-main button {
@@ -57,5 +59,45 @@ main {
 @media(max-width: 375px) {
   main {
     flex-direction: column-reverse;
+  }
+
+  .image {
+    width: 300px;
+    margin: auto;
+  }
+
+  .main-h1 {
+    display: flex;
+    margin: auto;
+  }
+
+  .main-h1 h1 {
+    margin: 0;
+    font-size: 30px;
+    padding: 10px;
+  }
+
+  .content-main .p {
+    padding: 20px 0;
+    display: inline;
+    text-align: center;
+  }
+
+  .content-main p {
+    font-size: 15px;
+  }
+
+  .content-main button {
+    margin: auto;
+    font-size: 15px;
+  }
+
+  .block-images {
+    margin-top: 20px;
+  }
+
+  .block-images img {
+    padding: 0 10px;
+    width: 73px;
   }
 }

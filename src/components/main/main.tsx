@@ -11,10 +11,18 @@ export const Main = () => {
   return (
     <main>
       <div className="content-main">
-        <h1>Make <br /> remote  work </h1>
-        <p>Get your team in sync, no matter your location. <br />
+        <div className="main-h1">
+          <h1>Make</h1>
+          <h1>remote  work</h1>
+        </div>
+        <div className="p">
+          <p>Get your team in sync, no matter your location.</p>
+          <p>Streamline processes, create team rituals, and</p>
+          <p>watch productivity soar.</p>
+        </div>
+        {/* <p>Get your team in sync, no matter your location. <br />
           Streamline processes, create team rituals, and <br />
-          watch productivity soar.</p>
+          watch productivity soar.</p> */}
         <button>Lear more</button>
 
         <div className="block-images">
