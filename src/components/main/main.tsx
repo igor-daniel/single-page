@@ -20,22 +20,18 @@ export const Main = () => {
           <p>Streamline processes, create team rituals, and</p>
           <p>watch productivity soar.</p>
         </div>
-        {/* <p>Get your team in sync, no matter your location. <br />
-          Streamline processes, create team rituals, and <br />
-          watch productivity soar.</p> */}
         <button>Lear more</button>
-
         <div className="block-images">
-          <img src={data} />
-          <img src={audio} />
-          <img src={meet} />
-          <img src={maker} />
+          <img src={data} alt="Data" />
+          <img src={audio} alt="audio" />
+          <img src={meet} alt="meet" />
+          <img src={maker} alt="maker" />
         </div>
       </div>
       <div className="image">
         <picture>
           <source media="(max-width: 400px)" srcSet={ImgMobile} />
-          <img src={ImgDesktop} alt="" />
+          <img src={ImgDesktop} alt="image-desktop" />
         </picture>
 
       </div>

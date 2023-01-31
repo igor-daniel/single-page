@@ -10,7 +10,6 @@ import Calendar from '../img/icon-calendar.svg'
 import alarm from '../img/icon-reminders.svg'
 import planning from '../img/icon-planning.svg'
 import menuImg from '../img/icon-menu.svg'
-import { element } from "prop-types";
 
 export const Header = () => {
   return (
@@ -22,17 +21,17 @@ export const Header = () => {
       <div className="content content-mobile">
         <nav className="menu">
           <ul>
-            <li onClick={showClass}>Features <img src={arrowLow} alt="" />
+            <li onClick={showClass}>Features <img src={arrowLow} alt="arrow" />
               <div id="box-list">
                 <ul>
-                  <li><img src={todoList} /> Todo list</li>
-                  <li><img src={Calendar} /> Calendar</li>
-                  <li><img src={alarm} /> Reminders</li>
-                  <li><img src={planning} /> Planning</li>
+                  <li><img src={todoList} alt='Todo list' /> Todo list</li>
+                  <li><img src={Calendar} alt='calendar' /> Calendar</li>
+                  <li><img src={alarm} alt='alarm' /> Reminders</li>
+                  <li><img src={planning} alt='planning' /> Planning</li>
                 </ul>
               </div>
             </li>
-            <li onClick={openBox}>Company <img src={arrowLow} alt="" />
+            <li onClick={openBox}>Company <img src={arrowLow} alt="arrow" />
               <div id="box-near">
                 <ul>
                   <li>History</li>
@@ -54,7 +53,7 @@ export const Header = () => {
       </div>
 
       <div onClick={openMenu} className="img-image">
-        <img src={menuImg} />
+        <img src={menuImg} alt="menu hamburger" />
       </div>
     </header >
 
