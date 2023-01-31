@@ -3,7 +3,7 @@ import './header.css'
 import showClass from './showClass.js'
 import openBox from './openBox.js'
 import Logo from '../img/logo.svg'
-import CetaBaixo from '../img/icon-arrow-down.svg'
+import arrowLow from '../img/icon-arrow-down.svg'
 import todoList from '../img/icon-todo.svg'
 import Calendar from '../img/icon-calendar.svg'
 import alarm from '../img/icon-reminders.svg'
@@ -20,9 +20,9 @@ export const Header = () => {
       <div className="content">
         <nav className="menu">
           <ul>
-            <li onClick={showClass}>Features <img src={CetaBaixo} alt="" />
+            <li onClick={showClass}>Features <img src={arrowLow} alt="" />
             </li>
-            <li onClick={openBox}>Company <img src={CetaBaixo} alt="" /></li>
+            <li onClick={openBox}>Company <img src={arrowLow} alt="" /></li>
             <li>Careers</li>
             <li>About</li>
           </ul>
