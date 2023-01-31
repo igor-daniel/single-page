@@ -2,6 +2,7 @@ import React from "react";
 import './header.css'
 import showClass from './showClass.js'
 import openBox from './openBox.js'
+import openMenu from "./openMenu";
 import Logo from '../img/logo.svg'
 import arrowLow from '../img/icon-arrow-down.svg'
 import todoList from '../img/icon-todo.svg'
@@ -18,12 +19,28 @@ export const Header = () => {
         <img src={Logo} alt="" />
       </div>
 
-      <div className="content">
+      <div className="content content-mobile">
         <nav className="menu">
           <ul>
             <li onClick={showClass}>Features <img src={arrowLow} alt="" />
+              <div id="box-list">
+                <ul>
+                  <li><img src={todoList} /> Todo list</li>
+                  <li><img src={Calendar} /> Calendar</li>
+                  <li><img src={alarm} /> Reminders</li>
+                  <li><img src={planning} /> Planning</li>
+                </ul>
+              </div>
             </li>
-            <li onClick={openBox}>Company <img src={arrowLow} alt="" /></li>
+            <li onClick={openBox}>Company <img src={arrowLow} alt="" />
+              <div id="box-near">
+                <ul>
+                  <li>History</li>
+                  <li>Our Time</li>
+                  <li>Blog</li>
+                </ul>
+              </div>
+            </li>
             <li>Careers</li>
             <li>About</li>
           </ul>
@@ -34,25 +51,9 @@ export const Header = () => {
             <li id="border">Register</li>
           </ul>
         </div>
-        <div id="box-list">
-          <ul>
-            <li><img src={todoList} /> Todo list</li>
-            <li><img src={Calendar} /> Calendar</li>
-            <li><img src={alarm} /> Reminders</li>
-            <li><img src={planning} /> Planning</li>
-          </ul>
-        </div>
-        <div className="box-near">
-          <ul>
-            <li>History</li>
-            <li>Our Time</li>
-            <li>Blog</li>
-          </ul>
-        </div>
-
-
       </div>
-      <div className="img-image">
+
+      <div onClick={openMenu} className="img-image">
         <img src={menuImg} />
       </div>
     </header >

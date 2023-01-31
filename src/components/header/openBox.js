@@ -1,5 +1,5 @@
 const openBox = ()=>{
-  const box = document.querySelector('.box-near')
+  const box = document.getElementById('box-near')
   box.classList.toggle('block')
   // box.classList.toggle('block');
 }
